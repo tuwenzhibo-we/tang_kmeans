@@ -62,8 +62,13 @@ class get_class_cluster:
     alone_point = list()
     # _centroids:聚类中心, _alone:数据孤立点, _cf_surplus:剩余数据, , _cf_surplus:大于epusilong的数据对象，即剩余数据对象
     _centroids, _alone, _map_data, _cf_surplus = step4_to_step6(ci_surplus, centroids, alone_point, _map)
-    #
+    print("++重复step4~step6，发现小于lambda的数据对象已为0个对象++")
+    print("聚类中心有：", _centroids, "\n孤立数据点：", _alone)
+    # 先打印出来，后续若想一个一个拿出来也可以
+    print("聚类中心与小于lambda的数据对象的映射关系：", _map_data)
+    # 接下来对，剩余的数据再进行处理即可
 
 
-    print("++++++++++++++++++++++++++++")
+
+
 
